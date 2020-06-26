@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Personal Data\\GIT_personal\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
+    "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "E:\\Personal Data\\GIT_personal\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
+    "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal Data\\GIT_personal\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "E:\\Personal Data\\GIT_personal\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\kushal.seth\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal Data\\GIT_personal\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\obj\\",
+        "outputPath": "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\vs_code\\WebApplication1\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
