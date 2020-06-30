@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Personal Data\\GIT_personal\\dotnettraining\\dotnettraining.csproj": {}
+    "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\dotnettraining.csproj": {}
   },
   "projects": {
-    "E:\\Personal Data\\GIT_personal\\dotnettraining\\dotnettraining.csproj": {
+    "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\dotnettraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Personal Data\\GIT_personal\\dotnettraining\\dotnettraining.csproj",
+        "projectUniqueName": "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\dotnettraining.csproj",
         "projectName": "dotnettraining",
-        "projectPath": "E:\\Personal Data\\GIT_personal\\dotnettraining\\dotnettraining.csproj",
+        "projectPath": "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\dotnettraining.csproj",
         "packagesPath": "C:\\Users\\kushal.seth\\.nuget\\packages\\",
-        "outputPath": "E:\\Personal Data\\GIT_personal\\dotnettraining\\obj\\",
+        "outputPath": "E:\\Personal Data\\GIT_personal\\netcoreapis\\dotnettraining\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
