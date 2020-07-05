@@ -1,5 +1,6 @@
 ﻿using CourseLibrary.API.DbContexts;
-using CourseLibrary.API.Entities; 
+using CourseLibrary.API.Entities;
+using CourseLibrary.API.ResourceParameters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -191,5 +192,7 @@ namespace CourseLibrary.API.Services
                 // dispose resources when needed
             }
         }
+
+
     }
 }
