@@ -1,0 +1,112 @@
+﻿<div id="js-parent-appointments">
+    <h1 style="text-align: center; padding-top: 60px;">YOUR APPOINTMENTS </h1>
+    <a href="#" class="btn btn-info btn-lg" id="js-add-moreappointments" style="float: right; margin-right: 48px;">
+        <span class="glyphicon glyphicon-plus"></span> Add more APPOINTMENTS
+    </a>
+    <form style="margin-top: 60px;">
+        
+        <div class="form-group">
+            <label for="js-appoitment-date"><span class="glyphicon glyphicon-user"></span><strong>PLEASE SELECT APPOINTMENT DATE</strong></label>
+            <input type="date" name="appdate" class="form-control" id="js-appoitment-date">
+        </div>
+        <a href="#" id="js-get-appointment-list" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Get Appointment List</a>
+    </form>
+    
+</div>
+
+
+
+<div class="modal fade" id="js-modal-addappointments" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Add more Appointments</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div>Create appointment for</div>
+                    <label class="radio-inline js-radio-patient" data-patienttype="new" style="padding-right: 10px">
+                        <input type="radio" name="optpatient" value="newpat">New Patient
+                    </label>
+                    <label class="radio-inline js-radio-patient" data-patienttype="old" style="padding-right: 10px">
+                        <input type="radio" name="optpatient" value="oldpat">Old Patient
+                    </label>
+                    @*@Html.DropDownListFor("js-patients-list",
+                    new SelectList(Enum.GetValues(typeof(Gender))),
+                    "Select Patient", new { @class = "form-control" })*@
+                    <div class="dropdown" id="#js-old-patientpara" style="display: none">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                            Patient's List
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Kushal</a></li>
+                            <li class="disabled"><a href="#">Mohit</a></li>
+                            <li class="active"><a href="#">Rajveer</a></li>
+                            <li><a href="#">Shubham</a></li>
+                        </ul>
+                    </div>
+                    <div id="#js-new-patientpara">
+                        <div class="form-group">
+                            <label for="js-app-first-name"><span class="glyphicon glyphicon-user"></span>First Name</label>
+                            <input type="text" class="form-control" id="js-app-first-name" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="js-app-last-name"><span class="glyphicon glyphicon-eye-open"></span>Last Name</label>
+                            <input type="text" class="form-control" id="js-app-last-name" placeholder="Enter Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="js-app-emailaddress"><span class="glyphicon glyphicon-eye-open"></span>Email Address</label>
+                            <input type="text" class="form-control" id="js-app-emailaddress" placeholder="Enter Email Address">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="js-app-datetime"><span class="glyphicon glyphicon-eye-open"></span>Date/Time of Appointment</label>
+                        <input type="datetime-local" class="form-control" id="js-app-datetime">
+                    </div>
+                    <div class="form-group">
+                        <span>Appointment Type</span>                      
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="ONB-P">Online Booking - Paid</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="ONB-NP">Online Booking - Not Paid</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="OFFB-P">Offline Booking - Paid</label>
+                    </div>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio" value="OFFB-NP">Offline Booking - Not Paid</label>
+                    </div>
+
+
+                    @*<div class="form-group">
+                            <label for="last_name"><span class="glyphicon glyphicon-eye-open"></span>Last Name</label>
+                            <input type="text" class="form-control" id="last_name" placeholder="Enter Last Name">
+                        </div>*@
+                    @*<label class="radio-inline" style="padding-right: 10px">
+                            <input type="radio" name="optradio">Online Booking - Paid
+                        </label>
+                        <label class="radio-inline" style="padding-right: 10px">
+                            <input type="radio" name="optradio">Online Booking - Not Paid
+                        </label>
+                        <label class="radio-inline" style="padding-right: 10px">
+                            <input type="radio" name="optradio">Paid patient
+                        </label>
+                        <label class="radio-inline" style="padding-right: 10px">
+                            <input type="radio" name="optradio">Regular patient
+                        </label>*@
+                    <a href="#" id="js-save-new-appointment" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Save Appointment</a>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>

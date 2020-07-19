@@ -1,0 +1,33 @@
+﻿
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top js-navbar">
+    <a class="navbar-brand" href="#">MEDICAL SYSTEM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                @Html.ActionLink("I AM A DOCTOR", "Index", "Doctor", null, new { @class = "nav-link c_navlink" })
+            </li>
+            <li class="nav-item">
+                @Html.ActionLink("I AM A PATIENT", "Index", "Patient", null, new { @class = "nav-link c_navlink" })                
+            </li>
+            <li class="nav-item">     
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a class="nav-link c_navlink"> Welcome @User.Identity.Name </a>
+                }
+                else
+                {
+                    @Html.ActionLink("Login / Sign Up", "Registration", "Account", null, new { @class = "nav-link c_navlink" })
+                    
+                }
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+</script>
+
+

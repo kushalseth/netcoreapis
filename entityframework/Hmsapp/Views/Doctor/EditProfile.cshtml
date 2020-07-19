@@ -1,0 +1,43 @@
+﻿@model Hmsapp.Models.DoctorProfileModel
+
+<div id="js-doc-editparent">
+    <h4>Doctor Profile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.TextBoxFor(m => m.FirstName, new { @id = "js-firstname" })
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.TextBoxFor(m => m.LastName, new { @id = "js-lastname" })
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.TextBoxFor(m => m.PhoneNumber, new { @id = "js-phonenumber" })
+        </dd>
+
+    </dl>
+    <p>
+        <a href="#" id="js-savedocprofile">Save Changes</a>
+    </p>
+</div>
